@@ -9,6 +9,6 @@ class TranslationHistorySerializer(serializers.ModelSerializer):
 
 
 class TranslationRequestSerializers(serializers.Serializer):
-    source_text = serializers.TextField()
-    target_text = serializers.TextField()
+    source_text = serializers.CharField()
     source_language = serializers.CharField(max_length=10)
+    target_language = serializers.CharField(max_length=10)
